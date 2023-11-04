@@ -1,0 +1,105 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PARKINSON'S DISEASE DETECTION</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>PARKINSON'S DISEASE DETECTION</h1>
+    <form method="POST" action="/predict">
+	<label for="number">Number:</label>
+        <input type="text" name="number" required>
+
+        <label for="no_strokes_st">Number of Strokes (Static):</label>
+        <input type="text" name="no_strokes_st" required>
+
+        <label for="no_strokes_dy">Number of Strokes (Dynamic):</label>
+        <input type="text" name="no_strokes_dy" required>
+
+        <label for="speed_st">Speed (Static):</label>
+        <input type="text" name="speed_st" required>
+
+        <label for="speed_dy">Speed (Dynamic):</label>
+        <input type="text" name="speed_dy" required>
+
+        <label for="magnitude_vel_st">Magnitude of Velocity (Static):</label>
+        <input type="text" name="magnitude_vel_st" required>
+
+        <label for="magnitude_horz_vel_st">Magnitude of Horizontal Velocity (Static):</label>
+        <input type="text" name="magnitude_horz_vel_st" required>
+
+        <label for="magnitude_vert_vel_st">Magnitude of Vertical Velocity (Static):</label>
+        <input type="text" name="magnitude_vert_vel_st" required>
+
+        <label for="magnitude_vel_dy">Magnitude of Velocity (Dynamic):</label>
+        <input type="text" name="magnitude_vel_dy" required>
+
+        <label for="magnitude_horz_vel_dy">Magnitude of Horizontal Velocity (Dynamic):</label>
+        <input type="text" name="magnitude_horz_vel_dy" required>
+
+        <label for="magnitude_vert_vel_dy">Magnitude of Vertical Velocity (Dynamic):</label>
+        <input type="text" name="magnitude_vert_vel_dy" required>
+
+        <label for="magnitude_acc_st">Magnitude of Acceleration (Static):</label>
+        <input type="text" name="magnitude_acc_st" required>
+
+        <label for="magnitude_horz_acc_st">Magnitude of Horizontal Acceleration (Static):</label>
+        <input type="text" name="magnitude_horz_acc_st" required>
+
+        <label for="magnitude_vert_acc_st">Magnitude of Vertical Acceleration (Static):</label>
+        <input type="text" name="magnitude_vert_acc_st" required>
+
+        <label for="magnitude_acc_dy">Magnitude of Acceleration (Dynamic):</label>
+        <input type="text" name="magnitude_acc_dy" required>
+
+        <label for="magnitude_horz_acc_dy">Magnitude of Horizontal Acceleration (Dynamic):</label>
+        <input type="text" name="magnitude_horz_acc_dy" required>
+
+        <label for="magnitude_vert_acc_dy">Magnitude of Vertical Acceleration (Dynamic):</label>
+        <input type="text" name="magnitude_vert_acc_dy" required>
+
+        <label for="magnitude_jerk_st">Magnitude of Jerk (Static):</label>
+        <input type="text" name="magnitude_jerk_st" required>
+
+        <label for="magnitude_horz_jerk_st">Magnitude of Horizontal Jerk (Static):</label>
+        <input type="text" name="magnitude_horz_jerk_st" required>
+
+        <label for="magnitude_vert_jerk_st">Magnitude of Vertical Jerk (Static):</label>
+        <input type="text" name="magnitude_vert_jerk_st" required>
+
+        <label for="magnitude_jerk_dy">Magnitude of Jerk (Dynamic):</label>
+        <input type="text" name="magnitude_jerk_dy" required>
+
+        <label for="magnitude_horz_jerk_dy">Magnitude of Horizontal Jerk (Dynamic):</label>
+        <input type="text" name="magnitude_horz_jerk_dy" required>
+
+        <label for="magnitude_vert_jerk_dy">Magnitude of Vertical Jerk (Dynamic):</label>
+        <input type="text" name="magnitude_vert_jerk_dy" required>
+
+        <label for="ncv_st">NCV (Static):</label>
+        <input type="text" name="ncv_st" required>
+
+        <label for="ncv_dy">NCV (Dynamic):</label>
+        <input type="text" name="ncv_dy" required>
+
+        <label for="nca_st">NCA (Static):</label>
+        <input type="text" name="nca_st" required>
+
+        <label for="nca_dy">NCA (Dynamic):</label>
+        <input type="text" name="nca_dy" required>
+
+        <label for="in_air_stcp">In Air StCP:</label>
+        <input type="text" name="in_air_stcp" required>
+
+        <label for="on_surface_st">On Surface St:</label>
+        <input type="text" name="on_surface_st" required>
+
+        <label for="on_surface_dy">On Surface Dy:</label>
+        <input type="text" name="on_surface_dy" required>
+
+        <button type="submit">Detect Parkinson's</button>
+    </form>
+</body>
+</html>
